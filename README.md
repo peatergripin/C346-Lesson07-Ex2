@@ -47,13 +47,15 @@ Lessons 7 taught us on the fundamental layout style in React Native - Flexbox. W
 
 ```jsx
 <View>
-  {/*Exercise 1*/}
-  <Text style={{ fontSize: 24 }}>RP Values</Text>
-  <Text style={{ color: "green" }}>Excellence</Text>
-  <Text style={{ backgroundColor: "yellow" }}>Customer-Centric</Text>
-  <Text style={{ fontStyle: "italic" }}>Integrity</Text>
-  <Text style={{ textAlign: "center" }}>Teamwork</Text>
-  <Text style={{ color: "white", backgroundColor: "black" }}>Enterprising</Text>
+  <View style={styles.greenBox}>
+    <Text style={[styles.boxText, styles.title]}>Who We Are</Text>
+  </View>
+  <View style={styles.greenBox}>
+    <Text style={styles.boxText}>Our People</Text>
+  </View>
+  <View style={styles.greenBox}>
+    <Text style={styles.boxText}>Our Campus</Text>
+  </View>
   <StatusBar barStyle="default" />
 </View>
 ```
